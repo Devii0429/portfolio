@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devi Lalam | Portfolio</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="Logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#internships-projects">Internships</a></li>
+          <li><a href="#internships-projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Home Section -->
+      <div class="header-text">
+        <div class="left">
+          <p class="intro-role">Web Developer</p>
+          <h1 class="intro-title">Hello, I'm Devi Lalam</h1>
+
+          <!-- Resume Button -->
+          <a href="file:///C:/Users/lalam/Downloads/Deviii%20_compressed.pdf" class="btn" download target="_blank">
+            Download Resume
+          </a>
+
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/devi-lalam-58b49730a" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Devii0429" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-btn">
+              <i class="fab fa-instagram"></i>
+            </a>
+           <a href="https://instagram.com/yourprofile" target="_blank" class="social-btn">
+              <i class="fab fa-facebook"></i>
+              </a>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="circle-image-container">
+            <img src="images/backgroundimage.jpg" alt="Profile" class="circle-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="section">
+    <div class="about-container glass-box">
+      <div class="about-left">
+        <img src="images/backgroundimage.jpg" alt="Devi Lalam" class="profile-image" />
+      </div>
+      <div class="about-right">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">I am Devi Lalam, a dedicated Full Stack Developer with strong skills in Data Structures and Algorithms (DSA). I enjoy building modern, responsive, and user-friendly web applications while also solving complex coding problems through clean and efficient logic<br>
+           With hands-on experience in both frontend and backend development, I constantly explore new technologies and take on challenging projects to grow as a developer.</p>
+
+        <div class="tab-container">
+          <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+          </div>
+
+          <div id="skills" class="tab-content active">
+            <ul class="section-list">
+              <li>HTML, CSS, JavaScript, Django, React</li>
+              <li>Python, Java, Data Structures and Algorithms</li>
+              <li> Sql ,MySQL, Git, VS Code</li>
+            </ul>
+          </div>
+
+          <div id="experience" class="tab-content">
+            <ul class="section-list">
+              <li><span class="highlight">Infosys Springboard:</span> Angular Full Stack</li>
+              <li><span class="highlight">Codsoft:</span> Java Development</li>
+              <li><span class="highlight">ExcelR:</span> Python Full Stack</li>
+            </ul>
+          </div>
+
+          <div id="education" class="tab-content">
+            <ul class="section-list">
+              <li>B.Tech in Computer Science – Sri Padmavathi Mahila Visvavidyalaym</li>
+              <li>12th – Sri Ravi Teja Junior College</li>
+              <li>10th – Sri Vidyanjali School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internships & Projects Section -->
+  <div id="internships-projects" class="section">
+    <div class="container row">
+      <div class="column glass-box">
+        <h2 class="section-title">Internships</h2>
+        <p class="section-subtitle">Completed various internships to develop and enhance programming and full-stack skills.</p>
+        <ul class="section-list">
+          <li><span class="highlight">Codsoft</span> – Java Internship focused on backend development and algorithms.</li>
+          <li><span class="highlight">Infosys Springboard</span> – Angular Full Stack Internship building dynamic web apps.</li>
+          <li><span class="highlight">ExcelR</span> – Python Full Stack Internship with real-world projects.</li>
+        </ul>
+      </div>
+
+      <div class="column glass-box">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Hands-on projects showcasing web development and UI/UX design capabilities.</p>
+        <ul class="section-list">
+          <li><span class="highlight">Portfolio Website</span> – Built using HTML, CSS, and JavaScript.</li>
+          <li><span class="highlight">Redstore Clone</span> – E-commerce UI design using React and CSS Modules.</li>
+          <li><span class="highlight">Blog Template</span> – Responsive dark mode blog layout.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<section id="certifications" class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certification-cards">
+      <div class="cert-card">
+        <h3>ExcelR</h3>
+        <p>Python Full Stack Development | 2025</p>
+        <a href="file:///C:/Users/lalam/Downloads/Deviii%20_compressed.pdf" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>IIT Hyderabad</h3>
+        <p>Privacy & Security in Social Media | 2025</p>
+        <a href="file:///C:/Users/lalam/Downloads/Deviii%20_compressed.pdf" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Codsoft</h3>
+        <p>Java Development | 2025</p>
+        <a href="file:///C:/Users/lalam/Downloads/Deviii%20_compressed.pdf" target="_blank">View Certificate</a>
+      </div>
+      <div class="cert-card">
+        <h3>Infosys Springboard</h3>
+        <p>Angular Full Stack Development | 2025</p>
+        <a href="file:///C:/Users/lalam/Downloads/Deviii%20_compressed.pdf" target="_blank">View Certificate</a>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <div id="contact" class="section">
+    <div class="container glass-box contact-container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Have a question or want to work together? Fill the form below.</p>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="copyright">
+    <p>© 2025 Made with <i class="fas fa-heart"></i> by Devi</p>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const links = document.querySelectorAll('.tab-link');
+      tabs.forEach((tab) => tab.classList.remove('active'));
+      links.forEach((link) => link.classList.remove('active'));
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

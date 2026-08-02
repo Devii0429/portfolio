@@ -1,0 +1,489 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Navigation */
+#header {
+  padding: 20px 0;
+  background: #000;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+/* Home Section */
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.header-text .left {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.intro-role {
+  color: #00ffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.intro-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00cccc;
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background: #00ffff;
+  color: #000;
+}
+
+/* Profile Image */
+.circle-image-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(255,255,255,0.2);
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Glass Box */
+.glass-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.7);
+}
+
+/* Section Titles & Subtitle */
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-img img {
+  width: 140px;       /* much smaller size */
+  height: 140px;      /* keep consistent */
+  border-radius: 50%; /* circle style */
+  object-fit: cover;  /* keeps proportions */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 0 auto;
+}
+/* About Section Image */
+.profile-image {
+  width: 140px;          /* smaller size */
+  height: 140px;         /* keeps square */
+  border-radius: 50%;    /* circular profile */
+  object-fit: cover;     /* avoids stretching */
+  display: block;
+  margin: 0 auto;        /* centers inside column */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Certifications Grid */
+.certification-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* spacing between cards */
+  margin-top: 20px;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cert-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00eaff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cert-card a:hover {
+  text-decoration: underline;
+}
+/* Add spacing after About section */
+#about .about-container {
+  margin-bottom: 60px;  /* adjust value as needed */
+}
+
+/* OR add spacing before Internships & Projects section */
+#internships-projects {
+  margin-top: 60px;  /* adjust value as needed */
+}
+/* About Section Glass Box */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 40px;     /* reduced padding */
+  max-width: 1200px;       /* keep it narrower */
+  margin: 0 auto 60px;    /* center + spacing below */
+  border-radius: 25px;
+}
+.about-left {
+  flex: 1;
+  text-align: center;
+}
+.about-right {
+  flex: 2;
+}
+
+/* Tabs */
+.tab-container {
+  margin-top: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-link.active,
+.tab-link:hover {
+  background: #00ffff;
+  color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.section-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.highlight {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+/* Internships & Projects */
+.row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Certifications Section */
+#certifications {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.cert-card {
+  flex: 1 1 220px;
+  max-width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0, 255, 255, 0.4);
+  background: rgba(0, 255, 255, 0.1);
+}
+
+.cert-icon {
+  font-size: 50px;
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+.cert-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cert-info p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.cert-btn {
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cert-btn:hover {
+  background: #00cccc;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-container textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-container button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-container button:hover {
+  background: #00cccc;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .header-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text .left {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cert-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert-card {
+    max-width: 80%;
+  }
+}
+.profile-image {
+  width: 300px;          /* smaller than before */
+  height: auto;          /* keeps natural aspect ratio */
+  border-radius: 10px;   /* just slightly rounded corners */
+  object-fit: cover;     /* avoids stretching */
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+#about {
+  margin-top: 100px;  /* adjust value as needed (20px–60px) */
+}
+#header {
+  padding: 80px 10% 20px;   /* top, sides, bottom */
+  min-height: auto;         /* remove unnecessary full height */
+}
+
+
+
+
+

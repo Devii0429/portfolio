@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Employee</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Update Employee</h2>
+    <form action="/update_emp" method="post">
+        <input type="number" name="id" value="{{ emp[0] }}" readonly>
+        <input type="number" name="age" value="{{ emp[2] }}" required>
+        <input type="text" name="department" value="{{ emp[3] }}" required>
+        <button type="submit">Update</button>
+    </form>
+    <a href="/view">Back to List</a>
+</body>
+</html>
